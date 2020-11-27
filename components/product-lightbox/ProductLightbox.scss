@@ -1,0 +1,77 @@
+.product-lightbox {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+
+  .product-lightbox-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+  }
+
+  .product-ligthbox-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+
+  .product-ligthbox-content {
+    width: 445px;
+    height: 425px;
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 0 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .product-lightbox-title {
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 45px;
+    color: #fff;
+    font-family: $font-family-secondary;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .product-lightbox-desc {
+    font-family: $font-family-main;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  hr {
+    width: 76px;
+    height: 2px;
+    background: #fff;
+    border: 0;
+    margin: 20px 0;
+  }
+
+  .btn-outline {
+    max-width: 260px;
+  }
+  //   font-family: Montserrat;
+  // font-weight: bold;
+  // font-size: 13px;
+  // letter-spacing: 0.05em;
+  // text-align: center;
+  // color: #fff;
+  // width: 267px;
+  // height: 40px;
+  // background: #000;
+  // border: 1px solid #fff;
+}

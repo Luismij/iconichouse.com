@@ -1,0 +1,273 @@
+.page-index {
+  .footer-brands-container {
+    .loreal-brand {
+      display: flex;
+    }
+  }
+}
+
+.footer-brands-container {
+  // padding: 40px 0 0;
+
+  .loreal-brand {
+    padding-top: 40px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    img {
+      padding: 20px;
+    }
+    p {
+      padding: 20px;
+
+      font-size: .9rem;
+
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.2;
+
+      max-width: 360px;
+      span {
+        display: block;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .family-brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      // width: 20%;
+      padding: 20px;
+      a {
+        img {
+          max-width: 40vw;
+        }
+      }
+    }
+  }
+
+  ul {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #efefef;
+  padding: 35px 0 30px 0;
+
+  hr {
+    width: 76px;
+    height: 2px;
+    background: $black;
+    float: left;
+  }
+
+  .social-title {
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+
+  .socialList {
+    @include floater(left, 100%);
+    // margin-top: 20px;
+    margin-bottom: 40px;
+    li {
+      display: inline-block;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        width: 45px;
+        color: $black;
+        border: 1px solid $black;
+        border-radius: 100%;
+        margin-right: 10px;
+
+        span {
+          display: inline-flex;
+          transition: 0.5s ease;
+        }
+
+        &:hover {
+          background: $black;
+
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-nav {
+    // margin-bottom: 50px;
+    ul {
+      margin-bottom: 5px;
+      li {
+        margin-bottom: 12px;
+        a {
+          color: $black;
+          font-size: .9rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-right: 15px;
+          // padding: 15px 0;
+
+          text-decoration: none;
+
+          span {
+            transition: 0.2s ease-out;
+
+            padding: 3px 0;
+          }
+
+          &.nuxt-link-exact-active {
+            span {
+              border-bottom: 1.5px solid $black;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .legals-desktop {
+    display: none;
+  }
+
+  .legals {
+    ul {
+      margin-bottom: 5px;
+      li {
+        display: inline-block;
+        a {
+          color: $black;
+          padding: 10px 10px 10px 0;
+          font-size: .6rem;
+          position: relative;
+          &:after {
+            content: "|";
+            padding-left: 10px;
+            position: relative;
+            bottom: 0;
+          }
+
+        }
+            &:last-child {
+              a{
+
+                &:after {
+                  content: "";
+                }
+              }
+            }
+      }
+    }
+
+    p {
+      font-size: .55rem;
+      color: $gray-medium;
+      a {
+        color: $gray-medium;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-md) {
+  footer {
+    .footer-nav {
+      // margin-bottom: 50px;
+      ul {
+        li {
+          display: inline-block;
+        }
+      }
+
+    }
+    .legals-desktop {
+      display: block;
+    }
+    .legals-mobile {
+      display: none;
+    }
+    .social-title {
+      margin-top: 0;
+    }
+  }
+
+  .footer-brands-container {
+    .loreal-brand {
+      justify-content: center;
+      img {
+        padding: 20px;
+      }
+
+      p {
+        padding: 20px;
+        margin-bottom: 20px;
+
+        font-size: .75rem;
+        max-width: 100%;
+        letter-spacing: 1px;
+
+        span {
+          font-size: .9rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .family-brands {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        width: 20%;
+        padding: 40px;
+        a {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: $screen-lg) {
+  .footer-brands-container {
+    .family-brands {
+      margin-left: -20px;
+
+      li {
+        width: 20%;
+        padding: 40px;
+        a {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        &:first-child {
+          padding-left: 20px;
+        }
+
+        &:last-child {
+          margin-right: -20px;
+          padding-right: 20px;
+        }
+
+      }
+    }
+  }
+}

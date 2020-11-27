@@ -1,0 +1,64 @@
+section.artists {
+  .breadcrumb-separator,
+  .breadcrumb-item {
+    color: #000;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+  .artist-list {
+    margin-top: 30px;
+  }
+  .artist {
+    border: 1px solid $black;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    .img-container {
+      width: 100%;
+      margin-bottom: 36px;
+      overflow: hidden;
+      .img {
+        width: 100%;
+        padding-bottom: 99%;
+        // height: 100%;
+        background-color: $gray-light;
+        background-size: cover;
+        background-position: center;
+        transition: 0.3s ease;
+      }
+    }
+
+    .texts {
+      margin: 20px 0;
+      min-height: 105px;
+      text-transform: uppercase;
+      position: relative;
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        // position: absolute;
+        span {
+          display: block;
+          // margin-bottom: 5px;
+          a {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-xs) {
+  section.artists {
+    .artist-list {
+      [class^='col-'] {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "reset.scss";
+@import "custom-bootstrap.scss";
+// @import "fonts.scss";
+@import "texts.scss";
+@import "animations.scss";
+@import "common-elements.scss";
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}

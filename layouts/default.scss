@@ -1,0 +1,31 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+  // Montserrat Regular
+  font-family: $font-family-main, sans-serif;
+  font-weight: 400;
+
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  transition: 0.3s ease;
+}
+
+#app {
+  section {
+    padding-top: 90px;
+  }
+}
+
+@media only screen and (min-width: $screen-md) {
+  #app {
+    section {
+      padding-top: 80px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.blog-posts {
+  background-color: $main-color;
+  color: $white;
+  padding: 3rem 3rem 2rem;
+  text-transform: uppercase;
+  h2 {
+    margin: 20px auto 0;
+    text-align: center;
+    font-family: $font-family-playfair;
+  }
+  h4 {
+    margin: 20px 0;
+    text-align: center;
+    font-family: $font-family-nunito;
+    font-weight: 300;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: $screen-md) {
+  .blog-posts {
+    h2 {
+    }
+    h4 {
+      font-size: 15px;
+      width: 50%;
+    }
+  }
+}

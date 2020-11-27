@@ -1,0 +1,83 @@
+.subscribe {
+  display: flex;
+  align-items: flex-end;
+
+  background-image: url('../../../assets/images/bed.jpg');
+  // background-color: $main-color;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  padding: 30px;
+  width: 100%;
+
+  .container,
+  .container-xl {
+    .row {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .subscribe-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 30px;
+
+    min-height: 75vw;
+    width: 100%;
+
+    background-color: $black;
+
+    input {
+      padding: 10px;
+      margin: 0 0 10px;
+      width: 100%;
+      background-color: $gray-dark;
+      color: $white;
+      font-size: 0.85rem;
+      &::placeholder {
+        text-transform: uppercase;
+      }
+    }
+
+    .custom-control-label {
+      color: $white;
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 0.7rem;
+      }
+    }
+
+    img {
+      padding: 0 0 40px;
+    }
+
+    .messages-container {
+      position: relative;
+      width: 100%;
+      p {
+        position: absolute;
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-md) {
+  .subscribe {
+    .subscribe-box {
+      width: 400px;
+      min-height: 400px;
+
+      input {
+        // min-width: 250px;
+      }
+    }
+  }
+}

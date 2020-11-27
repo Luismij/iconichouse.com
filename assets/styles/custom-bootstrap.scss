@@ -1,0 +1,34 @@
+// Custom Bootstrap variable overrides go first
+$grid-breakpoints: (
+  xs: 0,
+  sm: $screen-xs,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl
+);
+
+$primary: $main-color;
+$secondary: $secondary-color;
+
+$enable-rounded: false;
+
+// Then include the following
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: $black;
+  background-color: $black;
+}
+@media (min-width: map-get($grid-breakpoints, xs)) and (max-width: map-get($grid-breakpoints, md)) {
+  .row > .col,
+  .row > [class*='col-'] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+// https://gist.github.com/benmccallum/33ff008660218a578fc27fd33f51d1c1
+// https://bootstrap-vue.org/docs/components/layout/
+// https://bootstrap-vue.org/docs/#tree-shaking-with-module-bundlers
+//https://bootstrap-vue.org/docs/reference/settings

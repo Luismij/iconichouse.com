@@ -1,0 +1,39 @@
+.big-header {
+  background-color: $white;
+
+  // padding: 0 0 220px;
+  padding: 0;
+
+  h2,
+  h4 {
+    color: $gray-dark;
+  }
+  h4 {
+    font-weight: 300;
+  }
+  .breadcrumb-separator,
+  .breadcrumb-item {
+    color: $black;
+  }
+  // .breadcrumb-header {
+  //   padding-top: 13px;
+  //   padding-bottom: 13px;
+  //   margin: 0;
+
+  //   .breadcrumb-separator,
+  //   .breadcrumb-item {
+  //     color: #fff;
+  //   }
+  // }
+}
+
+.big-header-margin {
+  // margin-top: -200px;
+}
+@media only screen and (min-width: $screen-md) {
+  .big-header {
+    h4 {
+      width: 65%;
+    }
+  }
+}

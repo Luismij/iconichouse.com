@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Knockout';
+  src: url('./Knockout-HTF27-JuniorBantamwt.eot');
+  src: url('./Knockout-HTF27-JuniorBantamwt.eot?#iefix')
+      format('embedded-opentype'),
+    url('./Knockout-HTF27-JuniorBantamwt.woff2') format('woff2'),
+    url('./Knockout-HTF27-JuniorBantamwt.woff') format('woff'),
+    url('./Knockout-HTF27-JuniorBantamwt.svg#Knockout-HTF27-JuniorBantamwt')
+      format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ./Playfair_Display/ */
+@font-face {
+  font-family: 'Playfair-display';
+  src: url('./Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Playfair-display';
+  src: url('./Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf')
+    format('truetype');
+  font-style: italic;
+}
+
+/* ./Nunito_Sans/ */
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-ExtraBoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-Bold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-LightItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-ExtraLight.ttf') format('truetype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('./Nunito_Sans/NunitoSans-ExtraLightItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* ./Bebas_Neue/ */
+@font-face {
+  font-family: 'Bebas-neue';
+  src: url('./Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}

@@ -1,0 +1,68 @@
+.btn-outline {
+  display: inline-block;
+
+  min-width: 100%;
+
+  // margin: 20px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+
+  border: 1px solid $black;
+  color: $white;
+  background-color: $black;
+
+  font-size: 0.8rem;
+  font-family: $font-family-bebas;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-align: center;
+  text-transform: uppercase;
+  &.border-white {
+    border: 1px solid $white;
+  }
+  &:hover {
+    text-decoration: none;
+    border: 1px solid $white;
+    color: $white;
+    background-color: $black;
+  }
+
+  &.invert {
+    border-color: #000;
+    color: #000;
+    background: transparent;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+.separator::after,
+.separator-black::after {
+  display: block;
+  content: '';
+  border-bottom: 2px solid #fff;
+  width: 100px;
+  margin: 22px auto 4px;
+}
+
+.separator-black::after {
+  border-bottom: 2px solid #000;
+}
+
+.separator-left::after {
+  margin: 22px 0 4px;
+}
+
+@media only screen and (min-width: $screen-md) {
+  .btn-outline {
+    min-width: 250px;
+
+    &:hover {
+      border-color: $black;
+      background-color: $white;
+      color: $black;
+    }
+  }
+}

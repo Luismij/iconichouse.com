@@ -1,0 +1,43 @@
+.testimonials {
+  //   .big-header {
+  //     background-color: $black;
+  //     padding: 40px 0 50vh;
+
+  //     h2,
+  //     h4 {
+  //       color: $white;
+  //     }
+  //     .breadcrumb-header {
+  //       .breadcrumb-separator,
+  //       .actualItem {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+
+  .testimonials-list {
+    margin-top: 30px;
+  }
+
+  @media only screen and (max-width: $screen-md) {
+    .share-options {
+      float: right;
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-md) {
+  .testimonials {
+    .big-header {
+      // padding: 40px 0 220px;
+
+      .breadcrumb-header {
+        .breadcrumb-separator,
+        .actualItem {
+          display: inline;
+        }
+      }
+    }
+  }
+}
