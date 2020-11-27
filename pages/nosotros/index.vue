@@ -1,11 +1,11 @@
 <template>
   <section class="artists">
     <b-container fluid="xl">
-      <breadcrumb actualArea="modelos" />
+      <breadcrumb actualArea="nostros" />
 
       <b-row>
         <b-col class="col-md-9">
-          <h2>modelos</h2>
+          <h2>¿Quienes somos?</h2>
 
           <h4 class="separator-black separator-left">
             Conoce aquí las modelos que hacen parte de Iconica House
@@ -13,42 +13,8 @@
         </b-col>
       </b-row>
 
-      <b-row class="artist-list">
-        <div
-          v-for="(item, index) in models"
-          :key="index"
-          class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3"
-        >
-          <div class="artist">
-            <div class="img-container">
-              <div
-                class="img lazyload"
-                :data-bg="
-                  `https://admin.iconicahouse.com${item.foto.formats.medium.url}`
-                "
-              />
-            </div>
-            <div class="texts">
-              <h3>{{ item.nombre }}</h3>
-              <p>
-                <span v-for="(rs, indx) in item.Redes" :key="indx">
-                  <strong>{{ rs.red_social + ' :' }}</strong>
-                  <a
-                    data-artist-instagram="true"
-                    :data-artist="item.nombre"
-                    :href="`${rs.url}`"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >{{ rs.username }}</a
-                  >
-                </span>
-              </p>
-              <p>
-                <span> <strong>Ver :</strong> ir a webcam</span>
-              </p>
-            </div>
-          </div>
-        </div>
+      <b-row class="" style="min-height:90vh; margin: 3vh 0;">
+        <p>{{data.Texto}}</p>
       </b-row>
     </b-container>
   </section>
@@ -71,13 +37,13 @@ export default {
   async asyncData({ $axios }) {
     try {
       // const { data } = await $axios.get(API_PATH)
-      const modelsData = await $axios.$get(
-        'https://admin.iconicahouse.com/modelos'
+      const data = await $axios.$get(
+        'https://admin.iconicahouse.com/quienes-somos'
       )
 
       return {
-        models: modelsData
-      }
+        data
+            }
     } catch (e) {
       console.log('Error loading api/artists')
       console.log(e)
@@ -167,4 +133,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="./Modelos.scss" />
+<style lang="scss" src="./Nosotros.scss" />

@@ -64,11 +64,11 @@
               </nuxt-link>
             </li>
                 <li >
-              <nuxt-link
-                to="/contacto"
+              <a
+                href=""
                 class="itemToHide"
                 ><span>Contacto</span>
-              </nuxt-link>
+              </a>
             </li>
           </ul>
           <div
@@ -85,11 +85,11 @@
               </nuxt-link>
             </li>
                 <li >
-              <nuxt-link
-                to="/contacto"
+              <a
+                href=""
                 class="itemToHide"
                 ><span>Contacto</span>
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </nav>

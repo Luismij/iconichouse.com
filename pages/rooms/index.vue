@@ -5,7 +5,7 @@
       <b-row>
         <div class="col-md-9">
           <h2>Rooms</h2>
-          <h4 class="separator-black">conoce nuestras rooms</h4>
+          <h4 class="separator-black">Conoce aquí las Rooms de Iconica House</h4>
         </div>
         <!-- <div class="col-md-3 align-items-end">
           <select-field :data="categories" :is-product-section="true" />

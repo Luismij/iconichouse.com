@@ -4,7 +4,7 @@
       <b-row>
         <b-col>
           <br/>
-          <div v-html="data.fields.content"></div>
+          <div v-html="data"></div>
         </b-col>
       </b-row>
     </b-container>
@@ -13,14 +13,13 @@
 
 <script>
 
-const API_PATH = '/privacy-policy'
+const API_PATH = '/politica-de-privacidad'
 export default {
   async asyncData({ $axios }) {
     try {
-      const { data } = await $axios.get(API_PATH)
+      const { data } = await $axios.get("http://admin.iconicahouse.com/politica-de-privacidad")
       return {
-        sectionData: data,
-        data: data.data[0]
+        data
       }
     } catch (e) {
       console.log('Error loading api/privacy')

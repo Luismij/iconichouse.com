@@ -4,7 +4,7 @@
       <b-row>
         <b-col>
           <br/>
-          <div v-html="data.fields.content"></div>
+          <div v-html="data"></div>
         </b-col>
       </b-row>
     </b-container>
@@ -12,14 +12,13 @@
 </template>
 
 <script>
-const API_PATH = '/terms-and-conditions'
+const API_PATH = '/terminos-y-condiciones'
 export default {
   async asyncData({ $axios }) {
     try {
-      const { data } = await $axios.get(API_PATH)
+      const  data  = await $axios.$get("http://admin.iconicahouse.com/terminos-y-condiciones")
       return {
-        sectionData: data,
-        data: data.data[0]
+        data
       }
     } catch (e) {
       console.log('Error loading api/terms-and-conditions')

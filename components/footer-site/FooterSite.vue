@@ -9,23 +9,23 @@
               <nav class="footer-nav">
                 <ul>
                   <li >
-                    <nuxt-link  to="item.link"><span>inicio</span></nuxt-link>
+                    <nuxt-link  to="/"><span>inicio</span></nuxt-link>
                     <!-- <nuxt-link v-if="item.is_anchor[0]!= 'yes'" :to="item.link"><span>{{ item.text || "" }}</span></nuxt-link> -->
                   </li>
                                     <li >
-                    <nuxt-link  to="item.link"><span>modelos</span></nuxt-link>
+                    <nuxt-link  to="/modelos"><span>modelos</span></nuxt-link>
                     <!-- <nuxt-link v-if="item.is_anchor[0]!= 'yes'" :to="item.link"><span>{{ item.text || "" }}</span></nuxt-link> -->
                   </li>
                                     <li >
-                    <nuxt-link  to="item.link"><span>rooms</span></nuxt-link>
+                    <nuxt-link  to="/rooms"><span>rooms</span></nuxt-link>
                     <!-- <nuxt-link v-if="item.is_anchor[0]!= 'yes'" :to="item.link"><span>{{ item.text || "" }}</span></nuxt-link> -->
                   </li>
                                     <li >
-                    <nuxt-link  to="item.link"><span>quienes somos</span></nuxt-link>
+                    <nuxt-link  to="/nosotros"><span>quienes somos</span></nuxt-link>
                     <!-- <nuxt-link v-if="item.is_anchor[0]!= 'yes'" :to="item.link"><span>{{ item.text || "" }}</span></nuxt-link> -->
                   </li>
                                     <li >
-                    <nuxt-link  to="item.link"><span>contacto</span></nuxt-link>
+                    <a  href=""><span>contacto</span></a>
                     <!-- <nuxt-link v-if="item.is_anchor[0]!= 'yes'" :to="item.link"><span>{{ item.text || "" }}</span></nuxt-link> -->
                   </li>
                 </ul>
@@ -37,7 +37,7 @@
                       <nuxt-link to="/terms-and-conditions"><span>Terminos y condiciones</span></nuxt-link>
                     </li>
                      <li>
-                      <nuxt-link to="/terms-and-conditions"><span>Politica de privacidad</span></nuxt-link>
+                      <nuxt-link to="/privacy-policy"><span>Politica de privacidad</span></nuxt-link>
                     </li>
                   </ul>
                 <p>© 2020  Iconica House.  Todos los Derechos Reservados</p>
@@ -77,7 +77,7 @@
                       <nuxt-link to="/terms-and-conditions"><span>Terminos y condiciones</span></nuxt-link>
                     </li>
                      <li>
-                      <nuxt-link to="/terms-and-conditions"><span>Politica de privacidad</span></nuxt-link>
+                      <nuxt-link to="/privacy-policy"><span>Politica de privacidad</span></nuxt-link>
                     </li>
                   </ul>
                 <p>© 2020  Iconica House.  Todos los Derechos Reservados</p>
