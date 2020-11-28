@@ -266,20 +266,12 @@
         </div>
       </div>
     </b-modal>
-    <b-modal id="welcom-msg-container" hide-footer hide-header>
-      <welcome-msg
-        @closeMsg="
-          () => {
-            this.$bvModal.hide('welcom-msg-container')
-          }
-        "
-      />
-    </b-modal>
+   
   </div>
 </template>
 
 <script>
-import WelcomMsg from '~/components/welcome-msg/WelcomeMsg'
+
 
 const URL_SERVICE = 'contact-form'
 export default {

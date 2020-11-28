@@ -10,7 +10,7 @@
       <nuxt />
     </div>
     <footer-site />
-    <!-- <footer-form /> -->
+ 
   </div>
 </template>
 
@@ -22,7 +22,7 @@ import ProductLightbox from '~/components/product-lightbox/ProductLightbox'
 // import VideoLightbox from '~/components/video-lightbox/VideoLightbox'
 import FormEstilistas from '~/components/form-estilistas/FormEstilistas'
 import Search from '~/components/search/Search'
-// import FooterForm from '~/components/footer-form/FooterForm'
+
 const VideoLightbox = () => ({
   component: import('~/components/video-lightbox/VideoLightbox')
 })
@@ -40,7 +40,7 @@ export default {
     FormEstilistas,
     HeaderSite,
     FooterSite,
-    // FooterForm
+ 
   },
   data() {
     return {
