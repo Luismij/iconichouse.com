@@ -4,7 +4,7 @@
       <b-row>
         <b-col>
           <br/>
-          <div v-html="data"></div>
+          <div v-html="data.text"></div>
         </b-col>
       </b-row>
     </b-container>
