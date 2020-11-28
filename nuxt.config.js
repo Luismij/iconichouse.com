@@ -107,7 +107,8 @@ export default {
     '@nuxtjs/sitemap',
     'vue-scrollto/nuxt',
     '@nuxtjs/gtm',
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/markdownit'
   ],
   /*
    ** Axios module configuration
@@ -152,7 +153,9 @@ export default {
       purpose: 'maskable'
     }
   },
-
+  markdownit: {
+    injected: true
+  },
   /*
    ** Build configuration
    */

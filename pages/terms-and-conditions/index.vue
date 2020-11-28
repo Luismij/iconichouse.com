@@ -4,7 +4,7 @@
       <b-row>
         <b-col>
           <br/>
-          <div v-html="data.text"></div>
+          <div v-html="$md.render(data.terminos)"></div>
         </b-col>
       </b-row>
     </b-container>

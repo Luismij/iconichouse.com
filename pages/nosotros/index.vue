@@ -14,7 +14,8 @@
       </b-row>
 
       <b-row class="" style="min-height:90vh; margin: 3vh 0;">
-        <p>{{data.Texto}}</p>
+        <div v-html="$md.render(data.Texto)"></div>
+       
       </b-row>
     </b-container>
   </section>

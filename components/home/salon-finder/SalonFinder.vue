@@ -8,12 +8,11 @@
         <img src="~/static/images/m-icon.svg" alt="">
 
 
-        <h2 class="text-white">
+        <h2 class="text-white text-uppercase">
          Visítanos
         </h2>
 
-        <h4 class="text-white">
-       {{direccion}}
+        <h4 class="text-white" v-html="$md.render(direccion)">
         </h4>
       </div>
 

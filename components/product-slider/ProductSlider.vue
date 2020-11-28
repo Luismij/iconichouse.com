@@ -33,7 +33,7 @@
 
       <b-row>
         <b-col class="d-flex justify-content-center">
-          <nuxt-link to="/productos" class="btn-outline">Ver más</nuxt-link>
+          <nuxt-link to="/modelos" class="btn-outline">Ver más</nuxt-link>
         </b-col>
       </b-row>
     </b-container>
@@ -51,11 +51,10 @@ export default {
   //     required: true
   //   }
   // },
-  props:['models'],
+  props: ['models'],
   components: {
     ProductItem
   },
- 
 
   computed: {
     productsData() {

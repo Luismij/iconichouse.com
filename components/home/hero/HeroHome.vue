@@ -14,10 +14,13 @@
               <h2 class="hero-title">{{item.texto || ""}}</h2>
               <h4 v-if="item.description">{{item.description || ""}}</h4>
               <div v-if="item.link">
-              
+                                <a
+                  href="#"
+                  class="btn-outline border-white d-none"
+                >{{ item.texto_boton || 'DESEO UNIRME' }}</a>
                 <nuxt-link
                   :to="item.link"
-                  class="btn-outline border-white"
+                  class="btn-outline border-white "
                 >{{ item.texto_boton || 'DESEO UNIRME' }}</nuxt-link>
               </div>
             </div>

@@ -20,6 +20,9 @@ a {
   section {
     padding-top: 90px;
   }
+  .main {
+    min-height: 80vh;
+  }
 }
 
 @media only screen and (min-width: $screen-md) {

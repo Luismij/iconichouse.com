@@ -17,7 +17,7 @@
             :key="index"
           />
 
-          <nuxt-link to="/rooms" class="btn-outline"> Cuéntame más </nuxt-link>
+          <nuxt-link to="/rooms" class="btn-outline"> Ver todas </nuxt-link>
 
         </b-col>
       </b-row>

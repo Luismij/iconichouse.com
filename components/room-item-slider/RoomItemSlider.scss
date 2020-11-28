@@ -27,8 +27,9 @@
     .swiper-button-prev,
     .swiper-button-next {
       transform: scale(0.5) translateY(-60%);
-      // background-color: $black;
+      // background-color: $gray-medium;
       padding: 14vw;
+      color: white;
       // top: calc(50% + 25px)
       &:focus {
         outline: 0;
@@ -91,9 +92,10 @@
         flex: 1 1 0;
         min-height: 30vh;
         width: 100%;
-        background-size: cover;
-        background-position: center right;
-
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-color: $gray-medium;
         opacity: 0; // animacion
         transition: all 2s ease-out;
       }

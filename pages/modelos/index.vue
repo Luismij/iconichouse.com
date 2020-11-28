@@ -43,9 +43,9 @@
                   >
                 </span>
               </p>
-              <p>
+              <!-- <p>
                 <span> <strong>Ver :</strong> ir a webcam</span>
-              </p>
+              </p> -->
             </div>
           </div>
         </div>

@@ -1,14 +1,14 @@
 <template>
-  <nuxt-link to="/room" class="media-card">
+  <div  class="media-card">
     <div class="card-image lazyload" :data-bg="img" />
     <div class="card-text">
       <h5 class="card-label text-primary">{{ label || "" }}</h5>
       <h3>{{ title || "" }}</h3>
       
 
-      <p class="card-description" v-html="description"/>
+      <p class="card-description" v-html="$md.render(description)"/>
     </div>
-  </nuxt-link>
+  </div>
 </template>
 <script>
 export default {

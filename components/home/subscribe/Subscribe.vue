@@ -10,17 +10,18 @@
         <div class="subscribe-box">
           <!-- <img src="~/static/images/r-icon.svg" alt="subscribe"> -->
 
-          <h2 class="text-white">iconica house</h2>
+          <h2 class="text-white">{{titulo}}</h2>
 
           <h4 class="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut leo imperdiet, porta purus eu, iaculis mauris. Vivamus lectus ante, finibus at erat suscipit, varius vestibulum tortor. Duis finibus tincidunt vehicula. 
+            {{nosotros}}
           </h4>
 
 
-          <div
+          <nuxt-link
+          to="/nosotros"
             class="btn-outline border-white"
           
-            >Saber más</div
+            >Saber más</nuxt-link
           >
 
           <!-- <div v-if="messages" class="messages-container">
@@ -38,6 +39,7 @@
 <script>
 export default {
   name: 'Subscribe',
+  props:['titulo','nosotros'],
   data() {
     return {
       submitClicked: false,

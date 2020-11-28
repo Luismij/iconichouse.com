@@ -46,27 +46,27 @@
           </b-col>
 
 
-          <!-- <b-col md="3" >
+          <b-col md="3" >
             <h4 class="social-title separator-black separator-left">Sigamos en contacto</h4>
             <ul class="socialList">
-              <li v-for="(social, index) in data.social_icons" :key="`social${index}`">
-                <a :href="social.link" target="_blank">
-                  <span v-if="social.name === 'facebook'">
+              <li v-for="(social, index) in data.socials" :key="`social${index}`">
+                <a :href="social.url" target="_blank">
+                  <span v-if="social.red_social === 'facebook'">
                     <v-icon name="brands/facebook-f" :icon="['fab', 'facebook-f']" label="facebook"/>
                   </span>
-                  <span v-else-if="social.name === 'pinterest'">
+                  <span v-else-if="social.red_social === 'pinterest'">
                     <v-icon name="brands/pinterest-p" :icon="['fab', 'pinterest-p']" label="pinterest" />
                   </span>
-                  <span v-else-if="social.name === 'snapchat'">
+                  <span v-else-if="social.red_social === 'snapchat'">
                     <v-icon name="brands/snapchat-ghost" :icon="['fab', 'snapchat-ghost']" label="snapchat"/>
                   </span>
                   <span v-else>
-                    <v-icon :name="`brands/${social.name}`" :icon="['fab', social.name]" :label="social.name"/>
+                    <v-icon :name="`brands/${social.red_social}`" :icon="['fab', social.red_social]" :label="social.red_social"/>
                   </span>
                 </a>
               </li>
             </ul>
-          </b-col> -->
+          </b-col>
 
         </b-row>
 

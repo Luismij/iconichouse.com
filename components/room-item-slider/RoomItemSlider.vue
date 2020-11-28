@@ -9,7 +9,11 @@
 
         <div class="swiper-wrapper">
           <!-- SLIDE -->
-          <div v-for="(item, index) in heroData" :key="index" class="swiper-slide hero-slide">
+          <div
+            v-for="(item, index) in heroData"
+            :key="index"
+            class="swiper-slide hero-slide"
+          >
             <!-- <div class="hero-texts">
               <h2 class="hero-title">{{item.title || ""}}</h2>
               <h4 v-if="item.description">{{item.description || ""}}</h4>
@@ -34,11 +38,14 @@
               </div>
             </div> -->
             <!-- <div>{{`https://admin.iconicahouse.com/${item.formats.medium.url}`}}</div> -->
-            <div class="hero-img" :style="{ 'background-image': `url('https://admin.iconicahouse.com${item.formats.medium.url}')` }">
+            <div
+              class="hero-img"
+              :style="{
+                'background-image': `url('https://admin.iconicahouse.com${item.formats.medium.url}')`
+              }"
+            >
               <!-- <img :src="`https://admin.iconicahouse.com${item.formats.medium.url}`" alt="" srcset=""> -->
-                
             </div>
-            
           </div>
           <!-- END SLIDE -->
         </div>
@@ -109,7 +116,6 @@ export default {
       // console.log('Current Swiper instance object', this.heroSlider)
       // this.currentBg = `bg-${this.heroSlider.activeIndex}`
       // this.heroSlider.on('loopFix', this.onLoopFix)
-
       // const swiperBgs = this.$refs.swiperBgs.$swiper
       // this.heroSlider.controller.control = swiperBgs
       // swiperBgs.controller.control = this.heroSlider
@@ -167,4 +173,4 @@ export default {
 }
 </script>
 
-<style  lang="scss" src="./RoomItemSlider.scss" />
+<style scoped lang="scss" src="./RoomItemSlider.scss" />

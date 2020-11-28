@@ -3,7 +3,7 @@
     <hero-home :hero-data="heroData" />
      <product-slider :models="models" />
     <blog-posts :posts-data="rooms"  />
-     <subscribe />
+     <subscribe :titulo="homeData.site_title" :nosotros="homeData.quienes_somos" />
 
     <div id="salones">
       <LazySalonFinder v-if="showDelayedComponents" :direccion="homeData.direccion"/>
