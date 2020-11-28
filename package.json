@@ -1,12 +1,12 @@
 {
-  "name": "kerastase",
+  "name": "iconicahouse",
   "version": "1.0.0",
-  "description": "Productos y tratamientos Redken para el cuidado del cabello.",
-  "author": "Loreal Profesional",
+  "description": "Modelos Webcam",
+  "author": "luismiguel.co",
   "private": true,
   "scripts": {
-    "dev": "nuxt --hostname localhost --port 40985",
-    "local": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=40985 nuxt",
+    "dev": "nuxt",
+    "local": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt",
     "build": "nuxt build",
     "buildstaging": "NODE_ENV=staging nuxt build",
     "start": "nuxt start",
