@@ -34,10 +34,10 @@
                 <b-col>
                   <ul>
                     <li>
-                      <nuxt-link to="/terms-and-conditions"><span>Terminos y condiciones</span></nuxt-link>
+                      <nuxt-link to="/terminos-y-condiciones"><span>Terminos y condiciones</span></nuxt-link>
                     </li>
                      <li>
-                      <nuxt-link to="/privacy-policy"><span>Politica de privacidad</span></nuxt-link>
+                      <nuxt-link to="/politica-de-privacidad"><span>Politica de privacidad</span></nuxt-link>
                     </li>
                   </ul>
                 <p>© 2020  Iconica House.  Todos los Derechos Reservados</p>
@@ -74,10 +74,10 @@
              <b-col>
                   <ul>
                     <li>
-                      <nuxt-link to="/terms-and-conditions"><span>Terminos y condiciones</span></nuxt-link>
+                      <nuxt-link to="/terminos-y-condiciones"><span>Terminos y condiciones</span></nuxt-link>
                     </li>
                      <li>
-                      <nuxt-link to="/privacy-policy"><span>Politica de privacidad</span></nuxt-link>
+                      <nuxt-link to="/politica-de-privacidad"><span>Politica de privacidad</span></nuxt-link>
                     </li>
                   </ul>
                 <p>© 2020  Iconica House.  Todos los Derechos Reservados</p>
