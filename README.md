@@ -1,6 +1,6 @@
 # Iconica House
 
-Redken website, developed with NuxtJS.
+Iconica House website, developed with NuxtJS.
 
 ## Install
 

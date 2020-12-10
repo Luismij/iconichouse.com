@@ -65,7 +65,8 @@
             </li>
                 <li >
               <a
-                href=""
+              @click.prevent="clickEstilistas"
+            
                 class="itemToHide"
                 ><span>Contacto</span>
               </a>
@@ -86,7 +87,8 @@
             </li>
                 <li >
               <a
-                href=""
+              @click.prevent="clickEstilistas"
+                
                 class="itemToHide"
                 ><span>Contacto</span>
               </a>

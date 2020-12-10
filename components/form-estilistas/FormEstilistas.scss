@@ -1,18 +1,18 @@
 .modal-body {
   padding: 0;
   color: $black;
-  background-color: $gray-darker;
+  background-color: $gray-dark;
 }
 .modal-content {
   // background: #000;
-  background-color: $gray-darker;
+  background-color: $gray-dark;
   border: 0;
 }
 .estilistas {
   & {
     // background-color: red;
     width: 100%;
-    background-color: $gray-darker;
+    background-color: $gray-dark;
   }
   .estilistas-ligthbox-close {
     position: absolute;
@@ -113,8 +113,8 @@
 
   input,
   textarea {
-    background-color: $gray-dark;
-    border: none;
+    background-color: $gray-darker;
+    border: 1px solid $gray-medium;
     padding: 11px 14px;
     margin-bottom: 8px;
     font-size: 12px;

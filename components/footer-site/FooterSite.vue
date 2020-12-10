@@ -25,7 +25,7 @@
                     <!-- <nuxt-link v-if="item.is_anchor[0]!= 'yes'" :to="item.link"><span>{{ item.text || "" }}</span></nuxt-link> -->
                   </li>
                                     <li >
-                    <a  href=""><span>contacto</span></a>
+                    <a @click.prevent="clickEstilistas"><span>contacto</span></a>
                     <!-- <nuxt-link v-if="item.is_anchor[0]!= 'yes'" :to="item.link"><span>{{ item.text || "" }}</span></nuxt-link> -->
                   </li>
                 </ul>
@@ -82,15 +82,6 @@
                   </ul>
                 <p>© 2020  Iconica House.  Todos los Derechos Reservados</p>
               </b-col>
-<!-- 
-          <b-col md="auto">
-            <nuxt-link to="/">
-              <h1>
-                <img :src="data.logo_footer.url" :alt="data.brand_content" />
-              </h1>
-            </nuxt-link>
-          </b-col> -->
-
         </b-row>
 
       </b-container>
