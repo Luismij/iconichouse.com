@@ -194,7 +194,7 @@ export default {
       //   this.isSending = false
       // }, 2500)
       this.$axios
-        .post('https://admin.iconicahouse.com/contacto', {
+        .post('https://admin.iconicahouse.com/contactos', {
           nombre: this.nombre,
           email: this.email,
           tratamiento_datos: this.tratamientoDatos,
