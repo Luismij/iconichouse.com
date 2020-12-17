@@ -68,17 +68,19 @@ export default {
   },
   data() {
     return {
-      showDelayedComponents: false,
-      map: this.$store.state.siteConfigData.mapa
-        ? this.$store.state.siteConfigData.mapa
-            .match(/src=".*"/)[0]
-            .slice(5, -1)
-        : undefined
+      showDelayedComponents: false
     }
   },
   computed: {
     getTitlePage() {
       return this.$store.state.siteConfigData.site_title
+    },
+    map() {
+      return this.$store.state.siteConfigData.mapaEmbed
+        ? this.$store.state.siteConfigData.mapaEmbed
+            .match(/src=".*"/)[0]
+            .slice(5, -1)
+        : undefined
     }
   },
   mounted() {
