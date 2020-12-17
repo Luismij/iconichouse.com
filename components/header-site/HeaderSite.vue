@@ -30,7 +30,6 @@
                 class="logo"
                 :src="`https://admin.iconicahouse.com${data.logo.url}`"
                 alt="iconica_house"
-                
               />
             </h1>
           </nuxt-link>
@@ -45,51 +44,35 @@
         <nav class="main-nav" :class="[menuIsOpen ? 'open' : 'closed']">
           <ul>
             <li>
-              <nuxt-link
-                to="/modelos"
-                ><span>Modelos</span>
-              </nuxt-link>
+              <nuxt-link to="/modelos"><span>Modelos</span> </nuxt-link>
             </li>
-            <li >
-              <nuxt-link
-                to="/rooms"
-                ><span>Rooms</span>
-              </nuxt-link>
+            <li>
+              <nuxt-link to="/rooms"><span>Rooms</span> </nuxt-link>
             </li>
-            <li >
-              <nuxt-link
-                to="/nosotros"
-                class="itemToHide"
+            <li>
+              <nuxt-link to="/nosotros" class="itemToHide"
                 ><span>Nosotros</span>
               </nuxt-link>
             </li>
-                <li >
-              <a
-              @click.prevent="clickEstilistas"
-            
-                class="itemToHide"
+            <li>
+              <a href="" class="itemToHide" @click.prevent="clickEstilistas"
                 ><span>Contacto</span>
               </a>
             </li>
           </ul>
-          <div
-            class="text-center mb-3 d-md-none"
-          >© 2020  Iconica House. All Rights Reserved</div>
+          <div class="text-center mb-3 d-md-none">
+            © 2020 Iconica House. All Rights Reserved
+          </div>
         </nav>
         <nav class="last-nav">
           <ul>
-                        <li >
-              <nuxt-link
-                to="/nosotros"
-                class="itemToHide"
+            <li>
+              <nuxt-link to="/nosotros" class="itemToHide"
                 ><span>Nosotros</span>
               </nuxt-link>
             </li>
-                <li >
-              <a
-              @click.prevent="clickEstilistas"
-                
-                class="itemToHide"
+            <li>
+              <a href="" class="itemToHide" @click.prevent="clickEstilistas"
                 ><span>Contacto</span>
               </a>
             </li>

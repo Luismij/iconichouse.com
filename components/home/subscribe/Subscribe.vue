@@ -2,7 +2,7 @@
   <div
     id="subscribe"
     class="subscribe lazyload"
-    
+    :style="`background-color: ${backgroundImage}`"
   >
     <!-- <div id="subscribe" class="subscribe" :style="{'background-image':`url(${textsData.content_background})`}"> -->
     <b-container fluid="xl">
@@ -10,17 +10,13 @@
         <div class="subscribe-box">
           <!-- <img src="~/static/images/r-icon.svg" alt="subscribe"> -->
 
-          <h2 class="text-white">{{titulo}}</h2>
+          <h2 class="text-white">{{ titulo }}</h2>
 
           <h4 class="text-white">
-            {{nosotros}}
+            {{ nosotros }}
           </h4>
 
-
-          <nuxt-link
-          to="/nosotros"
-            class="btn-outline border-white"
-          
+          <nuxt-link to="/nosotros" class="btn-outline border-white"
             >Saber más</nuxt-link
           >
 
@@ -39,7 +35,7 @@
 <script>
 export default {
   name: 'Subscribe',
-  props:['titulo','nosotros'],
+  props: ['titulo', 'nosotros', 'backgroundImage'],
   data() {
     return {
       submitClicked: false,
@@ -68,32 +64,26 @@ export default {
     // async submit() {
     //   this.submitClicked = true
     //   this.messages = ''
-
     //   if (!this.emailIsValid) {
     //     this.messages = 'Ingresa un e-mail válido.'
     //     return
     //   }
-
     //   const formData = new FormData()
     //   formData.append('email', this.email)
     //   formData.append('consumidor_estilista', this.radioSelected)
-
     //   try {
     //     this.$gtm.push({
     //       event: 'Form Submission',
     //       label: 'Email - Subscribete Home'
     //     })
-
     //     const { data } = await this.$axios.post('subscribe', formData, {
     //       headers: {
     //         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
     //       }
     //     })
-
     //     if (data.status === 'ok') {
     //       this.messages = 'ok'
     //       this.submitSuccessfully = true
-
     //       this.$gtm.push({
     //         event: 'Form Submission Success',
     //         label: 'Email - Subscribete Home'
@@ -101,14 +91,12 @@ export default {
     //     } else {
     //       this.messages = data.message
     //       this.showSubmitBtn = true
-
     //       this.$gtm.push({
     //         event: 'ErrorJS',
     //         action: 'Form Submision error',
     //         label: data.message
     //       })
     //     }
-
     //     setTimeout(() => {
     //       this.messages = ''
     //     }, 5000)
@@ -116,7 +104,6 @@ export default {
     //     // console.log(e)
     //     this.messages = 'Error.'
     //     this.showSubmitBtn = true
-
     //     this.$gtm.push({
     //       event: 'ErrorJS',
     //       action: 'Form Submision error',

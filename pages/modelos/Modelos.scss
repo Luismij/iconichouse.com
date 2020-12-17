@@ -33,15 +33,18 @@ section.artists {
       min-height: 105px;
       text-transform: uppercase;
       position: relative;
+      color: #000;
       h3 {
         font-size: 2rem;
+        line-height: 1;
       }
-      p {
+      div {
         font-size: 0.8rem;
         line-height: 1.2;
-        // position: absolute;
-        span {
+        color: inherit; // position: absolute;
+        p {
           display: block;
+          color: #000;
           // margin-bottom: 5px;
           a {
             color: $black;

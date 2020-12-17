@@ -1,7 +1,7 @@
 <template>
   <section class="artists">
     <b-container fluid="xl">
-      <breadcrumb actualArea="modelos" />
+      <breadcrumb actual-area="modelos" />
 
       <b-row>
         <b-col class="col-md-9">
@@ -30,8 +30,8 @@
             </div>
             <div class="texts">
               <h3>{{ item.nombre }}</h3>
-              <p>
-                <span v-for="(rs, indx) in item.Redes" :key="indx">
+              <div>
+                <p v-for="(rs, indx) in item.Redes" :key="indx" class="my-2">
                   <strong>{{ rs.red_social + ' :' }}</strong>
                   <a
                     data-artist-instagram="true"
@@ -41,8 +41,8 @@
                     rel="noopener noreferrer"
                     >{{ rs.username }}</a
                   >
-                </span>
-              </p>
+                </p>
+              </div>
               <!-- <p>
                 <span> <strong>Ver :</strong> ir a webcam</span>
               </p> -->
@@ -83,9 +83,7 @@ export default {
       console.log(e)
       // redirect to error page
     }
-  },
-
-   
+  }
 }
 </script>
 

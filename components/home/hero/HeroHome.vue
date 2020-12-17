@@ -1,31 +1,44 @@
 <template>
   <div class="hero-slider">
-    <b-container fluid="xl" class="hero-container" v-show="showSlider">
+    <b-container v-show="showSlider" fluid="xl" class="hero-container">
       <div v-swiper:heroSlider="swiperOptions" @ready="onSlideReady">
         <!-- ARROWS -->
-        <div class="swiper-button-prev" slot="button-prev" />
-        <div class="swiper-button-next" slot="button-next" />
+        <div slot="button-prev" class="swiper-button-prev" />
+        <div slot="button-next" class="swiper-button-next" />
         <!-- END ARROWS -->
 
         <div class="swiper-wrapper">
           <!-- SLIDE -->
-          <div v-for="(item, index) in heroData" :key="index" class="swiper-slide hero-slide">
+          <div
+            v-for="(item, index) in heroData"
+            :key="index"
+            class="swiper-slide hero-slide"
+          >
             <div class="hero-texts">
-              <h2 class="hero-title">{{item.texto || ""}}</h2>
-              <h4 v-if="item.description">{{item.description || ""}}</h4>
+              <h2 class="hero-title">{{ item.texto || '' }}</h2>
+              <h4 v-if="item.description">{{ item.description || '' }}</h4>
               <div v-if="item.link">
-                                <a
-                  href="#"
-                  class="btn-outline border-white d-none"
-                >{{ item.texto_boton || 'DESEO UNIRME' }}</a>
+                <a
+                  v-if="item.link === '/contacto'"
+                  href=""
+                  class="btn-outline border-white "
+                  @click.prevent="clickEstilistas"
+                  >{{ item.texto_boton || 'DESEO UNIRME' }}</a
+                >
                 <nuxt-link
+                  v-else
                   :to="item.link"
                   class="btn-outline border-white "
-                >{{ item.texto_boton || 'DESEO UNIRME' }}</nuxt-link>
+                  >{{ item.texto_boton || 'DESEO UNIRME' }}</nuxt-link
+                >
               </div>
             </div>
-            <div class="hero-img" :style="`background-image: url('http://admin.iconicahouse.com${item.imagen.formats.medium.url}')`">
-             </div>
+            <div
+              class="hero-img"
+              :style="
+                `background-image: url('http://admin.iconicahouse.com${item.imagen.formats.medium.url}')`
+              "
+            ></div>
           </div>
           <!-- END SLIDE -->
         </div>
@@ -33,9 +46,16 @@
     </b-container>
 
     <div class="bgs-container">
-      <swiper class="swiper" ref="swiperBgs" :options="swiperOptionBg">
-        <swiper-slide class="slide-1" v-for="(item, index) in heroData" :key="`bg${index}`">
-          <div class="bg" :style="{'background-image':`url(${item.background_image})`}" />
+      <swiper ref="swiperBgs" class="swiper" :options="swiperOptionBg">
+        <swiper-slide
+          v-for="(item, index) in heroData"
+          :key="`bg${index}`"
+          class="slide-1"
+        >
+          <div
+            class="bg"
+            :style="{ 'background-image': `url(${item.background_image})` }"
+          />
         </swiper-slide>
       </swiper>
     </div>
@@ -55,6 +75,7 @@ export default {
   },
   data() {
     return {
+      menuIsOpen: false,
       currentBg: 0,
       // currentIndex: null,
       showSlider: false,
@@ -149,7 +170,18 @@ export default {
     onClickShowVideo(id) {
       // this.idVideo = id
       this.showVideo(id)
-    }
+    },
+    clickEstilistas() {
+      this.menuIsOpen = false
+      this.toggleForm()
+      this.$bvModal.show('estilistas-modal')
+    },
+    ...mapMutations({
+      toggleSearch: 'search/toggle',
+      toggleForm: 'form/toggle',
+      closeSearch: 'search/close',
+      closeForm: 'form/close'
+    })
   }
 }
 </script>

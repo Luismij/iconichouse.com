@@ -1,12 +1,20 @@
 <template>
   <section class="home">
     <hero-home :hero-data="heroData" />
-     <product-slider :models="models" />
-    <blog-posts :posts-data="rooms"  />
-     <subscribe :titulo="homeData.site_title" :nosotros="homeData.quienes_somos" />
-
+    <product-slider :models="models" />
+    <blog-posts :posts-data="rooms" />
+    <subscribe
+      :titulo="homeData.site_title"
+      :nosotros="homeData.quienes_somos"
+      :background-image="homeData.subscribeBackground || ''"
+    />
+    <!-- mapEmbedUrl(homeData.map)|| -->
     <div id="salones">
-      <LazySalonFinder v-if="showDelayedComponents" :direccion="homeData.direccion"/>
+      <LazySalonFinder
+        v-if="showDelayedComponents && map"
+        :direccion="homeData.direccion"
+        :mapurl="map"
+      />
     </div>
   </section>
 </template>
@@ -39,8 +47,12 @@ export default {
   },
   async asyncData({ $axios }) {
     try {
-      const homeData = await $axios.$get("http://admin.iconicahouse.com/homepage")
-      const modelsData = await $axios.$get('https://admin.iconicahouse.com/modelos')
+      const homeData = await $axios.$get(
+        'http://admin.iconicahouse.com/homepage'
+      )
+      const modelsData = await $axios.$get(
+        'https://admin.iconicahouse.com/modelos'
+      )
       const rooms = await $axios.$get('https://admin.iconicahouse.com/rooms')
       return {
         homeData,
@@ -56,14 +68,18 @@ export default {
   },
   data() {
     return {
-      showDelayedComponents: false
+      showDelayedComponents: false,
+      map: this.$store.state.siteConfigData.mapa
+        ? this.$store.state.siteConfigData.mapa
+            .match(/src=".*"/)[0]
+            .slice(5, -1)
+        : undefined
     }
   },
   computed: {
     getTitlePage() {
       return this.$store.state.siteConfigData.site_title
-    },
-
+    }
   },
   mounted() {
     setTimeout(() => {
@@ -154,7 +170,7 @@ export default {
 
       return meta
     }
-  },
+  }
   // head() {
   //   return {
   //     title: this.getPageTitle(),

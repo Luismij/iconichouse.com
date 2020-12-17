@@ -10,12 +10,11 @@
   color: $black;
   background-color: $white;
 
-  &:hover{
+  &:hover {
     text-decoration: none;
     .card-text {
       color: $black;
     }
-
   }
 
   .card-image {
@@ -41,7 +40,6 @@
       text-transform: uppercase;
       font-weight: 700;
       font-size: 0.7rem;
-
     }
 
     .card-date {
@@ -51,10 +49,9 @@
     }
 
     .card-description {
-      display: none;
+      line-height: 1.2;
     }
   }
-
 }
 
 @media only screen and (min-width: $screen-md) {
@@ -69,12 +66,13 @@
       padding: 20px;
       width: 50%;
 
+      p,
       .card-description {
         display: block;
         margin-top: 20px;
         line-height: 1.4;
         letter-spacing: 0.4px;
-        max-height: 48px;
+        // max-height: 48px;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 3;
