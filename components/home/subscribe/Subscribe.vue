@@ -2,7 +2,9 @@
   <div
     id="subscribe"
     class="subscribe lazyload"
-    :style="`background-color: ${backgroundImage}`"
+    :style="
+      `background-image: url('https://admin.iconicahouse.com${backgroundImage}');`
+    "
   >
     <!-- <div id="subscribe" class="subscribe" :style="{'background-image':`url(${textsData.content_background})`}"> -->
     <b-container fluid="xl">

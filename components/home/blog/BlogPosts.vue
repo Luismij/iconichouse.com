@@ -10,10 +10,17 @@
           </h4>
 
           <card
-            v-for="(post, index) in postsData.slice(0, 2)"
+            v-for="(post, index) in postsData
+              .sort((fse, sce) => {
+                if (fse.id < sce.id) {
+                  return -1
+                }
+                return 1
+              })
+              .slice(0, 2)"
             :key="index"
             :title="post.nombre"
-            :label="post.title || `Room ${index + 1}`"
+            :label="post.palabra_clave || `Room ${index + 1}`"
             :description="post.descripcion"
             :img="
               `https://admin.iconicahouse.com${post.fotos[0].formats.medium.url}`

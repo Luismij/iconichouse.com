@@ -6,7 +6,7 @@
     <subscribe
       :titulo="homeData.site_title"
       :nosotros="homeData.quienes_somos"
-      :background-image="homeData.subscribeBackground || ''"
+      :background-image="homeData.subscribeBackground.formats.large.url || ''"
     />
     <!-- mapEmbedUrl(homeData.map)|| -->
     <div id="salones">
