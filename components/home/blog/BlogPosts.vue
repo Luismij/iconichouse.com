@@ -8,16 +8,14 @@
           <h4 class="separator">
             contamos con las rooms más modernas
           </h4>
-
-          <card
-            v-for="(post, index) in postsData
-              .sort((fse, sce) => {
+          <!-- .sort((fse, sce) => {
                 if (fse.id < sce.id) {
                   return -1
                 }
                 return 1
-              })
-              .slice(0, 2)"
+              }) -->
+          <card
+            v-for="(post, index) in postsData.slice(0, 2)"
             :key="index"
             :title="post.nombre"
             :label="post.palabra_clave || `Room ${index + 1}`"
