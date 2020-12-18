@@ -53,7 +53,9 @@ export default {
       const modelsData = await $axios.$get(
         'https://admin.iconicahouse.com/modelos'
       )
-      const rooms = await $axios.$get('https://admin.iconicahouse.com/rooms')
+      const rooms = await $axios.$get(
+        'https://admin.iconicahouse.com/rooms?_sort=id:ASC'
+      )
       return {
         homeData,
         heroData: homeData.slider,
