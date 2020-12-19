@@ -51,7 +51,7 @@ export default {
   },
   async asyncData({ $axios }) {
     try {
-      const info = await $axios.$get('https://admin.iconicahouse.com/rooms')
+      const info = await $axios.$get('https://admin.iconicahouse.com/rooms?_sort=id:ASC')
       return {
         data: info
       }
