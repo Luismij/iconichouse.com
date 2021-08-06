@@ -3,7 +3,7 @@
     <b-container fluid="xl">
       <b-row>
         <b-col class="d-flex flex-column align-items-center">
-          <h4>Modelos</h4>
+          <h4>{{this.$store.state.siteConfigData.section_title_2||''}}</h4>
         </b-col>
       </b-row>
 

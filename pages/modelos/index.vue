@@ -5,10 +5,10 @@
 
       <b-row>
         <b-col class="col-md-9">
-          <h2>modelos</h2>
+          <h2>{{ this.$store.state.siteConfigData.section_title_2 || '' }}</h2>
 
           <h4 class="separator-black separator-left">
-            Conoce aquí las modelos que hacen parte de Iconica House
+            {{ this.$store.state.siteConfigData.section_desc_2 || '' }}
           </h4>
         </b-col>
       </b-row>
@@ -24,12 +24,13 @@
               <div
                 class="img lazyload"
                 :data-bg="
-                  `https://admin.iconicahouse.com${item.foto.formats.medium.url}`
+                  `https://admin.iconicahouse.com${item.foto.formats.url}`
                 "
               />
             </div>
             <div class="texts">
               <h3>{{ item.nombre }}</h3>
+              <p>{{ item.descripcion || '' }}</p>
               <div>
                 <p v-for="(rs, indx) in item.Redes" :key="indx" class="my-2">
                   <strong>{{ rs.red_social + ' :' }}</strong>

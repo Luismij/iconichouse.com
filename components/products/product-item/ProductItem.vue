@@ -6,7 +6,7 @@
 
     <div class="texts">
 
-      <h3 v-html="$md.render(data.palabra_clave)"></h3>
+      <!-- <h3 v-html="$md.render(data.palabra_clave)"></h3> -->
       <p  v-html="$md.render(data.descripcion)"></p>
     </div>
     <!-- <div  @click.stop="openProduct(data)" class="btn-outline invert">Saber más</div> -->

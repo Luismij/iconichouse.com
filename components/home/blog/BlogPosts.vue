@@ -3,10 +3,10 @@
     <b-container>
       <b-row>
         <b-col class="d-flex flex-column align-items-center">
-          <h2>rooms</h2>
+          <h2>{{this.$store.state.siteConfigData.section_title_1||''}}</h2>
 
           <h4 class="separator">
-            contamos con las rooms más modernas
+            {{this.$store.state.siteConfigData.section_desc_1||''}}
           </h4>
           <!-- .sort((fse, sce) => {
                 if (fse.id < sce.id) {
@@ -21,7 +21,7 @@
             :label="post.palabra_clave || `Room ${index + 1}`"
             :description="post.descripcion"
             :img="
-              `https://admin.iconicahouse.com${post.fotos[0].formats.medium.url}`
+              `https://admin.iconicahouse.com${post.fotos[0].url}`
             "
           />
 

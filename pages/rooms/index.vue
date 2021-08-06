@@ -4,9 +4,9 @@
       <breadcrumb actual-area="Rooms" />
       <b-row>
         <div class="col-md-9">
-          <h2>Rooms</h2>
+          <h2>{{this.$store.state.siteConfigData.section_title_1||''}}</h2>
           <h4 class="separator-black">
-            Conoce aquí las Rooms de Iconica House
+             {{this.$store.state.siteConfigData.section_desc_1||''}}
           </h4>
         </div>
         <!-- <div class="col-md-3 align-items-end">

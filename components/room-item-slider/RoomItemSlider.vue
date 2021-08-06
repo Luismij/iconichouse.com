@@ -41,7 +41,7 @@
             <div
               class="hero-img"
               :style="{
-                'background-image': `url('https://admin.iconicahouse.com${item.formats.medium.url}')`
+                'background-image': `url('https://admin.iconicahouse.com${item.formats.url}')`
               }"
             >
               <!-- <img :src="`https://admin.iconicahouse.com${item.formats.medium.url}`" alt="" srcset=""> -->
