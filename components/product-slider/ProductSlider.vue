@@ -3,7 +3,7 @@
     <b-container fluid="xl">
       <b-row>
         <b-col class="d-flex flex-column align-items-center">
-          <h4>{{this.$store.state.siteConfigData.section_title_2||''}}</h4>
+          <h4>{{ this.$store.state.siteConfigData.section_title_2 || '' }}</h4>
         </b-col>
       </b-row>
 
@@ -11,8 +11,8 @@
         <b-col v-show="showSlider">
           <!-- ARROWS -->
           <div class="nav-slider">
-            <div class="product-prev swiper-button-prev" slot="button-prev" />
-            <div class="product-next swiper-button-next" slot="button-next" />
+            <div slot="button-prev" class="product-prev swiper-button-prev" />
+            <div slot="button-next" class="product-next swiper-button-next" />
           </div>
           <!-- END ARROWS -->
 
@@ -33,7 +33,7 @@
 
       <b-row>
         <b-col class="d-flex justify-content-center">
-          <nuxt-link to="/modelos" class="btn-outline">Ver más</nuxt-link>
+          <nuxt-link to="/servicios" class="btn-outline">Ver más</nuxt-link>
         </b-col>
       </b-row>
     </b-container>
@@ -45,6 +45,9 @@ import ProductItem from '~/components/product-item/ProductItem'
 
 export default {
   name: 'ProductSlider',
+  components: {
+    ProductItem
+  },
   // props: {
   //   productsData: {
   //     type: Array,
@@ -52,15 +55,6 @@ export default {
   //   }
   // },
   props: ['models'],
-  components: {
-    ProductItem
-  },
-
-  computed: {
-    productsData() {
-      return this.$store.state.productsForSlider
-    }
-  },
   data() {
     return {
       showSlider: false,
@@ -97,6 +91,12 @@ export default {
           }
         }
       }
+    }
+  },
+
+  computed: {
+    productsData() {
+      return this.$store.state.productsForSlider
     }
   },
   methods: {

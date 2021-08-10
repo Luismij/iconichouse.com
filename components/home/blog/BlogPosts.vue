@@ -23,7 +23,7 @@
             :img="`https://admin.iconicahouse.com${post.fotos[0].url}`"
           />
 
-          <nuxt-link to="/rooms" class="btn-outline"> Ver todas </nuxt-link>
+          <nuxt-link to="/proyectos" class="btn-outline"> Ver todas </nuxt-link>
         </b-col>
       </b-row>
     </b-container>
