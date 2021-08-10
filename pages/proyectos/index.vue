@@ -1,12 +1,12 @@
 <template>
   <section class="products">
     <b-container fluid="lg">
-      <breadcrumb actual-area="Rooms" />
+      <breadcrumb actual-area="proyectos" />
       <b-row>
         <div class="col-md-9">
-          <h2>{{this.$store.state.siteConfigData.section_title_1||''}}</h2>
+          <h2>{{ this.$store.state.siteConfigData.section_title_1 || '' }}</h2>
           <h4 class="separator-black">
-             {{this.$store.state.siteConfigData.section_desc_1||''}}
+            {{ this.$store.state.siteConfigData.section_desc_1 || '' }}
           </h4>
         </div>
         <!-- <div class="col-md-3 align-items-end">
@@ -51,7 +51,9 @@ export default {
   },
   async asyncData({ $axios }) {
     try {
-      const info = await $axios.$get('https://admin.iconicahouse.com/rooms?_sort=id:ASC')
+      const info = await $axios.$get(
+        'https://admin.iconicahouse.com/rooms?_sort=id:ASC'
+      )
       return {
         data: info
       }

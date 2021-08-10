@@ -44,10 +44,20 @@
         <nav class="main-nav" :class="[menuIsOpen ? 'open' : 'closed']">
           <ul>
             <li>
-              <nuxt-link to="/modelos"><span>Modelos</span> </nuxt-link>
+              <nuxt-link
+                :to="`/${this.$store.state.siteConfigData.section_title_2}`"
+                ><span>{{
+                  this.$store.state.siteConfigData.section_title_2 || ''
+                }}</span>
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/rooms"><span>Rooms</span> </nuxt-link>
+              <nuxt-link
+                :to="`/${this.$store.state.siteConfigData.section_title_1}`"
+                ><span>{{
+                  this.$store.state.siteConfigData.section_title_1 || ''
+                }}</span>
+              </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/nosotros" class="itemToHide"

@@ -1,7 +1,7 @@
 <template>
   <section class="artists">
     <b-container fluid="xl">
-      <breadcrumb actual-area="modelos" />
+      <breadcrumb actual-area="servicios" />
 
       <b-row>
         <b-col class="col-md-9">

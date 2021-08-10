@@ -61,7 +61,7 @@ export default {
     letter-spacing: 0.05em;
     line-height: 12px;
     text-align: left;
-    color: #fff;
+    color: black;
     white-space: nowrap;
     padding-left: 0;
 
@@ -76,7 +76,7 @@ export default {
 
   .breadcrumb-separator {
     margin: -2px 10px 0;
-    color: #fff;
+    color: black;
 
     svg {
       height: 8px;
