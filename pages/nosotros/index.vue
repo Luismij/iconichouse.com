@@ -1,7 +1,7 @@
 <template>
   <section class="artists">
     <b-container fluid="xl">
-      <breadcrumb actualArea="nostros" />
+      <breadcrumb actual-area="nostros" />
 
       <b-row>
         <b-col class="col-md-9">
@@ -14,8 +14,7 @@
       </b-row>
 
       <b-row class="" style="min-height:90vh; margin: 3vh 0;">
-        <div v-html="$md.render(data.Texto)"></div>
-       
+        <div class="text" v-html="$md.render(data.Texto)"></div>
       </b-row>
     </b-container>
   </section>
@@ -44,16 +43,14 @@ export default {
 
       return {
         data
-            }
+      }
     } catch (e) {
       console.log('Error loading api/artists')
       console.log(e)
       // redirect to error page
     }
-  },
- 
-  
+  }
 }
 </script>
 
-<style lang="scss" src="./Nosotros.scss" />
+<style lang="scss" scoped src="./Nosotros.scss" />

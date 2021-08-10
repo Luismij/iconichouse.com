@@ -1,10 +1,10 @@
 <template>
   <div class="hero-slider">
-    <div class="hero-container" v-show="showSlider">
+    <div v-show="showSlider" class="hero-container">
       <div v-swiper:heroSlider="swiperOptions" @ready="onSlideReady">
         <!-- ARROWS -->
-        <div class="swiper-button-prev" slot="button-prev" />
-        <div class="swiper-button-next" slot="button-next" />
+        <div slot="button-prev" class="swiper-button-prev" />
+        <div slot="button-next" class="swiper-button-next" />
         <!-- END ARROWS -->
 
         <div class="swiper-wrapper">
@@ -41,7 +41,7 @@
             <div
               class="hero-img"
               :style="{
-                'background-image': `url('https://admin.iconicahouse.com${item.formats.url}')`
+                'background-image': `url('https://admin.iconicahouse.com${item.url}')`
               }"
             >
               <!-- <img :src="`https://admin.iconicahouse.com${item.formats.medium.url}`" alt="" srcset=""> -->

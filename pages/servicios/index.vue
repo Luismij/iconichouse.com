@@ -23,9 +23,7 @@
             <div class="img-container">
               <div
                 class="img lazyload"
-                :data-bg="
-                  `https://admin.iconicahouse.com${item.foto.formats.url}`
-                "
+                :data-bg="`https://admin.iconicahouse.com${item.foto.url}`"
               />
             </div>
             <div class="texts">
