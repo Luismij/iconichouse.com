@@ -20,7 +20,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: ''
+        content: 'Economía Naranja'
       },
       {
         hid: 'author',
